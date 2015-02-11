@@ -13,6 +13,7 @@ public class AuthentificationMethod
 	public static String authentification(String userName, String password)
 	{
 //blocked code used for AuthentificationMethod class. JOptionpane codes belong to JOptionpane class
+//which is down below
 		//Scanner input=new Scanner(System.in);
 		//System.out.println("enter in your username");
 		 String newUserName=JOptionPane.showInputDialog("enter username");
@@ -38,5 +39,17 @@ public class AuthentificationMethod
 			//System.out.println("wrong userName");
 		}
 		return newUserName;
+	}
+}
+// the joptionpane class 
+import javax.swing.JOptionPane;
+
+public class jOptionClass
+{
+	static String userName= "Kerbey", password="Chev";
+	public static void main(String[]args)
+	{
+		AuthentificationMethod.authentification(userName, password);
+		JOptionPane.showInputDialog("welcome "+userName);
 	}
 }
