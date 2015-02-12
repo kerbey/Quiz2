@@ -6,7 +6,8 @@ public class jOptionClass
 	public static void main(String[]args)
 	{
 		AuthentificationClass.authentification(userName, password);
-		String newUserName=JOptionPane.showInputDialog(" end ");
-		JOptionPane.showInputDialog("thank you "+newUserName);
+		JOptionPane.showMessageDialog(null," end ");
+		//JOptionPane.showMessageDialog(null,"thank you "+userName);//block this line if newUserName or newPassword
+		//is wrong
 	}
 }
