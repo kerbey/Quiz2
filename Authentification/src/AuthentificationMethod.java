@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 public class AuthentificationClass 
 {
@@ -7,7 +8,7 @@ public class AuthentificationClass
 		String userName="kerbey", password="chev";
 		String newUserName=authentification(userName, password);
 		System.out.println(" end ");
-		//System.out.println("thankyou "+newUserName);//this line is used to return the newUserName
+		System.out.println("thankyou "+newUserName);
 	}
 
 	public static String authentification(String userName, String password)
@@ -24,32 +25,20 @@ public class AuthentificationClass
 			String newPassword=input.next();
 			if (newPassword.contains(password))
 			{
-				//JOptionPane.showInputDialog("welcome "+newUserName);
+				//JOptionPane.showMessageDialog(null, "welcome "+newUserName);
 				System.out.println("welcome "+newUserName);
 			}
 			else 
 			{
-				//JOptionPane.showInputDialog("wrong password");
+				//JOptionPane.showMessageDialog(null,"wrong password");
 				System.out.println("wrong password");
 			}
 		}
 		else 
 		{
-			//JOptionPane.showInputDialog("wrong userName");
+			//JOptionPane.showMessageDialog(null,"wrong userName");
 			System.out.println("wrong userName");
 		}
 		return newUserName;
-	}
-}
-//the jOptionPaneClass
-import javax.swing.JOptionPane;
-public class jOptionClass
-{
-	static String userName= "Kerbey", password="Chev";
-	public static void main(String[]args)
-	{
-	        AuthentificationClass.authentification(userName, password);
-		String newUserName=JOptionPane.showInputDialog(" end ");
-		//System.out.println("thank you "+newUserName);//this line is used to return the newUserName
 	}
 }
